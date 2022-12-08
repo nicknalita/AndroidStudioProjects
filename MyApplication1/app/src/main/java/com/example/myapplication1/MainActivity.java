@@ -62,4 +62,15 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void openWindow2(View v) {
+        //call window2
+        setContentView(R.layout.calculadora);
+    }
+
+    public void openQtdeDias(View view) {
+
+        setContentView(R.layout.activity_contador_dias);
+    }
+
 }
