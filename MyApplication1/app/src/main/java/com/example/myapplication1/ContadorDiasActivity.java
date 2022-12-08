@@ -46,9 +46,6 @@ public class ContadorDiasActivity extends AppCompatActivity {
 
                 qtDias.setText(qtdeDias + "  DIAS.");
 
-
-
-
             }
         });
 
