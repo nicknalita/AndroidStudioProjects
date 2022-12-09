@@ -1,8 +1,11 @@
 package com.example.myapplication1;
 import java.util.Random;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -74,7 +77,16 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         initTextViews();
+
+        Button botaoContadorDias = findViewById(R.id.button4);
+        botaoContadorDias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ContadorDiasActivity.class));
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -95,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
         //call window2
         setContentView(R.layout.calculadora);
         initTextViews();
-
 
     }
 
@@ -293,6 +304,5 @@ public class MainActivity extends AppCompatActivity {
     public void ZeroOnClick(View view) {
         setWorkings("0");
     }
-
 
 }

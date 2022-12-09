@@ -84,6 +84,7 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:backgroundTint="#888787"
+                android:onClick="openQtdeDias"
                 android:text="Contador de Dias"
                 app:iconTint="#888787" />
         </TableRow>
