@@ -82,7 +82,17 @@ public class MainActivity extends AppCompatActivity {
         botaoContadorDias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ContadorDiasActivity.class));
+                startActivity(new Intent(MainActivity.this,
+                        ContadorDiasActivity.class));
+            }
+        });
+
+        Button botaoBuscaCep = findViewById(R.id.button_busca_de_cep);
+        botaoBuscaCep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,
+                        CepActivity.class));
             }
         });
     }
