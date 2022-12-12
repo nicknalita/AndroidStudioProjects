@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="data_inicial" type="id" />
+    <item name="btnConsultar" type="id"/>
+    <item name="editCEP" type="id"/>
+    <item name="textResultado" type="id"/>
 </resources>

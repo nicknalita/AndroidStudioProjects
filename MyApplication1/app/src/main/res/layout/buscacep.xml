@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/informe_o_cep"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editCEP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <EditText
+        android:id="@+id/editCEP"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/cep"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/consultar"
+        app:layout_constraintBottom_toTopOf="@+id/textInformacao"
+        app:layout_constraintStart_toStartOf="@+id/textInformacao"
+        app:layout_constraintTop_toBottomOf="@+id/editCEP" />
+
+    <TextView
+        android:id="@+id/textInformacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/informacao"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultar" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="294dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInformacao" />
+</androidx.constraintlayout.widget.ConstraintLayout>
