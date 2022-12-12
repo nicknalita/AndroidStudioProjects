@@ -5,7 +5,9 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContadorDiasActivity">
+    tools:context=".ContadorDiasActivity"
+    android:background="@color/cinzabg">
+
 
 
     <TextView
@@ -22,7 +24,7 @@
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/data_inicial"
@@ -94,20 +96,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="104dp"
-        android:background="#76859A"
+        android:background="@color/gray"
         android:text="Calcular Dias"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_contador_dias_data_final"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/banana"
+        android:id="@+id/resposta_dias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Dias."
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_contador_dias_data_final" />
