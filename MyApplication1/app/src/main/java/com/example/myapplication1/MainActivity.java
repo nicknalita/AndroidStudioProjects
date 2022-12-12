@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         initTextViews();
 
-        Button botaoContadorDias = findViewById(R.id.button4);
+        Button botaoContadorDias = findViewById(R.id.button_contador_dias);
         botaoContadorDias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

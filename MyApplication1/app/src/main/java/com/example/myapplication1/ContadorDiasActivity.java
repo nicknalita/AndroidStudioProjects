@@ -26,7 +26,7 @@ public class ContadorDiasActivity extends AppCompatActivity {
         final EditText campoDataInicial = findViewById(R.id.activity_contador_dias_data_inicial);
         final EditText campoDataFinal = findViewById(R.id.activity_contador_dias_data_final);
 
-        final TextView qtDias = findViewById(R.id.banana);
+        final TextView qtDias = findViewById(R.id.resposta_dias);
 
         Button botaoCalcDias = findViewById(R.id.button_calcular_dias);
         botaoCalcDias.setOnClickListener(new View.OnClickListener() {
