@@ -22,39 +22,34 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="65dp">
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="102dp">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="130dp"
+                android:id="@+id/button_cpf"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:backgroundTint="#888787"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
                 android:text="CPF"
                 app:iconTint="#888787"
                 tools:ignore="DuplicateClickableBoundsCheck" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="118dp"
+                android:id="@+id/button_busca_de_cep"
+                android:layout_width="150dp"
                 android:layout_height="130dp"
-                android:backgroundTint="#888787"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
                 android:text="Busca de CEP"
                 app:iconTint="#888787" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="118dp"
-                android:layout_height="130dp"
-                android:backgroundTint="#888787"
-                android:onClick="openWindow2"
-                android:text="Calculadora"
-                app:iconTint="#888787"
-                tools:ignore="TextContrastCheck" />
+
         </TableRow>
 
         <TableRow
@@ -62,28 +57,48 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button5"
-                android:layout_width="130dp"
+                android:id="@+id/button_calculadora"
+                android:layout_width="150dp"
                 android:layout_height="130dp"
-                android:backgroundTint="#888787"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
+                android:onClick="openWindow2"
+                android:text="Calculadora"
+                app:iconTint="#888787"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/button_validador_cnpj"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
                 android:text="Validador de CNPJ"
                 app:iconTint="#888787" />
 
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <Button
-                android:id="@+id/button6"
-                android:layout_width="130dp"
+                android:id="@+id/button_gerador"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:backgroundTint="#888787"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
+                android:onClick="openWindow3"
                 android:text="Gerador de Lorem Ipsum"
-                app:iconTint="#888787"
-                android:onClick="openWindow3"/>
+                app:iconTint="#888787" />
 
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="130dp"
+                android:id="@+id/button_contador_dias"
+                android:layout_width="150dp"
                 android:layout_height="130dp"
-                android:backgroundTint="#888787"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/gray"
                 android:onClick="openQtdeDias"
                 android:text="Contador de Dias"
                 app:iconTint="#888787" />
